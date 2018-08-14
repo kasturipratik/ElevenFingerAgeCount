@@ -13,6 +13,7 @@ public class Main {
         int a = scan.nextInt();
         int count =0;
         ArrayList<String> list = new ArrayList<>();
+
         for(int i =1; i <= a;i++){
 
             if(i%10 == 0){
@@ -25,12 +26,13 @@ public class Main {
             }
 
             list.add(i+ "");
+            if(i < a) {
+                System.out.print(list.get(i - 1) + ", ");
+            }else {
+                System.out.println(list.get(i-1)+ ".}");
+            }
         }
 
-        for(int i =0; i< a;i++){
-
-            System.out.print(list.get(i)+", ");
-        }
 
     }
 }
